@@ -19,6 +19,8 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
+import androidx.compose.material3.windowsizeclass.calculateWindowSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -28,24 +30,29 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jetpackmessageui.ui.components.WelcomeApp
+import com.example.jetpackmessageui.ui.components.meditation.MySootheApp
 import com.example.jetpackmessageui.ui.theme.JetPackMessageUITheme
 
 class MainActivity : ComponentActivity() {
+    @OptIn(ExperimentalMaterial3WindowSizeClassApi::class)
     @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            JetPackMessageUITheme {
-                    Surface(modifier = Modifier.fillMaxSize()) {
+//            JetPackMessageUITheme {
+//                    Surface(modifier = Modifier.fillMaxSize()) {
 
 //                    Conversation(messages = SampleData.conversationSample)
 //                    Activities()
 //                    QuestionPage()
-                        WelcomeApp()
-                    }
+//                    WelcomeApp()
+//                    }
+//
+//            }
 
-            }
+            val windoSizeClass = calculateWindowSizeClass(this)
+            MySootheApp(windoSizeClass)
         }
     }
 }
