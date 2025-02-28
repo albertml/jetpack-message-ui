@@ -1,4 +1,4 @@
-package com.example.jetpackmessageui.models
+package com.example.jetpackmessageui.ui.survey
 
 import com.example.jetpackmessageui.R
 

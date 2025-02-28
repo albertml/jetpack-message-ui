@@ -1,4 +1,4 @@
-package com.example.jetpackmessageui.ui.components
+package com.example.jetpackmessageui.ui.survey
 
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -7,7 +7,6 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.saveable.rememberSaveable
 import androidx.compose.runtime.setValue
-import com.example.jetpackmessageui.models.Answer
 
 @Composable
 fun SingleChoiceQuestion(answers: List<Answer>, onAnswerSelected: (String) -> Unit) {

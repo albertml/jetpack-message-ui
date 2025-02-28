@@ -1,4 +1,4 @@
-package com.example.jetpackmessageui.ui.components
+package com.example.jetpackmessageui.ui.survey.sample
 
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.animateContentSize
@@ -26,7 +26,6 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
 import com.example.jetpackmessageui.R
-import com.example.jetpackmessageui.models.Message
 
 @Composable
 fun MessageCard(message: Message) {

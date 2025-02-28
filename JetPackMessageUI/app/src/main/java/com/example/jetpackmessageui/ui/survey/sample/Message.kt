@@ -1,4 +1,4 @@
-package com.example.jetpackmessageui.models
+package com.example.jetpackmessageui.ui.survey.sample
 
 data class Message(
     val author: String,

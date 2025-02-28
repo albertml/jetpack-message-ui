@@ -1,4 +1,4 @@
-package com.example.jetpackmessageui.ui.components
+package com.example.jetpackmessageui.ui.survey
 
 import android.annotation.SuppressLint
 import androidx.compose.foundation.background
@@ -27,8 +27,6 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.jetpackmessageui.models.Answer
-import com.example.jetpackmessageui.models.answers
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable

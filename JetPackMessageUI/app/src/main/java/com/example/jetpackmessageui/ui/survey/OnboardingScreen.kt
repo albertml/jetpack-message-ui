@@ -1,4 +1,4 @@
-package com.example.jetpackmessageui.ui.components
+package com.example.jetpackmessageui.ui.survey
 
 import android.content.res.Configuration
 import androidx.compose.foundation.layout.Arrangement
