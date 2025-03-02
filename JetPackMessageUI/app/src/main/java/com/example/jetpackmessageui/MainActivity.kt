@@ -6,9 +6,11 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.windowsizeclass.ExperimentalMaterial3WindowSizeClassApi
 import androidx.compose.ui.Modifier
+import com.example.jetpackmessageui.ui.components.wellness.WellnessScreen
 import com.example.jetpackmessageui.ui.survey.WelcomeApp
 import com.example.jetpackmessageui.ui.theme.JetPackMessageUITheme
 
@@ -20,8 +22,14 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             JetPackMessageUITheme {
-               Surface(modifier = Modifier.fillMaxSize()) {
-                  WelcomeApp()
+               Surface(
+                   modifier = Modifier.fillMaxSize(),
+                   color = MaterialTheme.colorScheme.background
+               ) {
+                  // 1. WelcomeApp()
+                  // 2. WelcomeApp()
+
+                    WellnessScreen()
                }
             }
 
